@@ -9,9 +9,9 @@
  6. using JavaScript Delete Operator
  7. using Clear and Reset Operator
  8. using for() loop and a new array
- 9. using lodash _.remove method
+ 
 */
-
+ 
 let arr = ["shift", "splice", "filter", "pop"];
 
 /*
@@ -105,9 +105,53 @@ const removeElement = (arr,element)=>{
     })
 }
 
-console.log(removeElement(arr,'splice'));
+// console.log(removeElement(arr,'splice'));
 
 /*
 Method 6: Using Delete Operator
 Use the delete operator to remove elements from a JavaScript array.
 */
+
+const method_06=()=>{
+    const deletedElement = delete arr[2]
+    console.log(deletedElement);
+    console.log(arr);
+}
+// method_06()
+
+/*
+Method 7: Using Clear and Reset Operator
+Use the clear and reset operator to remove elements from a JavaScript array.
+*/
+
+const method_07 = ()=>{
+    let newArr =[...arr]
+    arr.length=0
+    console.log(`Original array:`,arr);
+    console.log(`New array:`,newArr);
+}
+// method_07()
+
+/*
+Method 8: using a simple for() loop and a new array
+Here a simple for() will be run over the array and the except for the removed element, 
+the remaining elements will be pushed into the new array which will be declared inside the function or a method.
+*/
+
+method_08 = (arrary,index)=>{
+    // let newArr=[]
+    // for(let i=0;i<arrary.length;i++){
+    //     if(i !== index){
+    //         newArr.push(arr[i])
+    //     }
+    // }
+    // console.log(newArr);
+    return arr.filter((value)=>{
+        if(value !== arr[index]){
+            return value
+        }
+    })
+
+}
+
+console.log(method_08(arr,1));
