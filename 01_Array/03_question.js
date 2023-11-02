@@ -154,4 +154,4 @@ method_08 = (arrary,index)=>{
 
 }
 
-console.log(method_08(arr,1));
+// console.log(method_08(arr,1));
