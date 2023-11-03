@@ -47,3 +47,17 @@ const unshiftMethod=()=>{
 // unshiftMethod()
 
 // Approach 4: Using reduce() method.
+
+
+let original_array = [1, 2, 3, 4];
+
+let reversed_array = [];
+
+console.log("Original Array: ");
+console.log(original_array);
+
+reversed_array = original_array.reduce((acc, item)=> [item].concat(acc), [])
+
+console.log("Reversed Array: ");
+console.log(reversed_array);
+
