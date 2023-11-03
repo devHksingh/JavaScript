@@ -61,3 +61,15 @@ reversed_array = original_array.reduce((acc, item)=> [item].concat(acc), [])
 console.log("Reversed Array: ");
 console.log(reversed_array);
 
+
+
+let array = [1, 2, 3, 4, 5];
+ 
+console.log("Original Array: ");
+console.log(array);
+ 
+reverse_array = array.map((item, idx) => array[array.length - 1 - idx])
+ 
+console.log("Reversed Array: ");
+console.log(reverse_array);
+
