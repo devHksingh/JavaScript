@@ -34,10 +34,28 @@ const q2 =(k)=> console.log(`Aera of circle is ${3.14*k*k}`);
 
 q2(4)
 
-/*
-3 3 3 3
-9-12=>3
-2-5=>3
-7-8=>1
-9-10=>1
-*/
+// Question-3: WAP to input two numbers and perform arithmetic operations on those numbers.
+
+const q3=(digit1,digit2,operation)=>{
+    switch (operation) {
+        case "add":
+            console.log(`Sum of ${digit1} and ${digit2} is ${digit1 + digit2}`) 
+            break;
+        case "subtract":
+            console.log(`Subtraction of ${digit1} and ${digit2} is ${digit1 - digit2}`)
+            break;
+        case "multiply":
+            console.log(`multiplication of ${digit1} and ${digit2} is ${digit1 * digit2}`)
+            break;
+        case "divide":
+            console.log(`divide of ${digit1} and ${digit2} is ${digit1 / digit2}`)
+            break;
+        default:
+            break;
+    }
+}
+
+q3(20,4,"divide")
+
+// Question-4: WAP to calculate total marks in two subject and then calculate percentage.
+

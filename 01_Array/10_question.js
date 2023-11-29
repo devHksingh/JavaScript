@@ -55,3 +55,7 @@ function reverseStringsInArray(arr){
 
 console.log(reverseString(title));
 console.log(reverseStringsInArray(messages));
+// built in string methods 
+// function reverseString(str){
+//     return str.split('').reverse().join('');
+// }
