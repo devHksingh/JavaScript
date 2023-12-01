@@ -59,3 +59,20 @@ q3(20,4,"divide")
 
 // Question-4: WAP to calculate total marks in two subject and then calculate percentage.
 
+const marks= new Map()
+// console.log(Math.floor(Math.random()*100));
+
+const q4 =()=>{
+    let phyMarks =[]
+    let mathMarks = []
+    for(let i=0 ;i<4;i++){
+        
+        phyMarks.push(Math.floor(Math.random() *50+1))
+        mathMarks.push(Math.floor(Math.random() *50+1))
+    }
+    marks.set("phy",phyMarks)
+    marks.set("math",mathMarks)
+    console.log(marks);
+    
+}
+q4()
